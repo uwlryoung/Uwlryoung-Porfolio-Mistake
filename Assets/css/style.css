@@ -11,6 +11,7 @@ body {
     color: var(--butter);
 }
 
+/* The header, includes page title and nav menu bar */
 header {
     background-color: var(--light-purple);
     padding: 10px;
@@ -34,6 +35,7 @@ nav li {
     margin: 20px;
 }
 
+/* The Banner Picture (hero pic) and Caption, below the header */
 .hero {
     display: flex;
 }
@@ -51,11 +53,33 @@ nav li {
     flex-grow: 1;
     opacity: 0.85;
 }
-    
+
+/* The About Me section (Title, headshot & text) */
+#about-me{
+    color: var(--dark-purple)
+}
+
+.card-title {
+    font-size: 30px;
+    padding: 10px;
+    background-color: var(--light-purple);
+}
+.card-content {
+    display: flex;
+}
+
+.card-content p {
+    padding: 10px;
+}
+
+#headshot {
+    width: 200px;
+}
+
+
 .featured-work {
     display: flex;
     flex-wrap: wrap;
-    width: 78%;
     border: var(--light-purple) solid 2px;
 }
 
@@ -68,7 +92,6 @@ nav li {
 }
 
 aside {
-    width: 18%;
 }
 
 footer {
