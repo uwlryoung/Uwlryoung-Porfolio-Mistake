@@ -1,0 +1,77 @@
+:root {
+    --light-purple: #AA96DA; 
+    --dark-purple: #28019c;
+    --mint: #C5FAD5;
+    --butter: #FFFFD2;
+}
+
+body {
+    background-color: var(--mint);
+    /* font-size: 62.5%; */
+    color: var(--butter);
+}
+
+header {
+    background-color: var(--light-purple);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+nav li {
+    margin: 20px;
+}
+
+.hero {
+    display: flex;
+}
+
+.hero-pic {
+    flex-grow: 1;
+    justify-content: space-between;
+    height: 200px;
+    width: 75%;
+}
+
+.hero-caption{
+    background-color: var(--light-purple);
+    border: var(--dark-purple) double 15px;
+    flex-grow: 1;
+    opacity: 0.85;
+}
+    
+.featured-work {
+    display: flex;
+    flex-wrap: wrap;
+    width: 78%;
+    border: var(--light-purple) solid 2px;
+}
+
+.higlighted-work {
+    border: var(--light-purple) solid 2px;
+}
+
+.other-work {
+
+}
+
+aside {
+    width: 18%;
+}
+
+footer {
+    background-color: var(--light-purple);
+    margin: auto 0;
+}
