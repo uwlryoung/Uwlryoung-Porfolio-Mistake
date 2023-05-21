@@ -7,8 +7,8 @@
 
 body {
     background-color: var(--mint);
-    /* font-size: 62.5%; */
     color: var(--butter);
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 
 /* The header, includes page title and nav menu bar */
@@ -54,18 +54,34 @@ nav li {
     opacity: 0.85;
 }
 
+.flexbox-body {
+    display: flex;
+    flex-direction: column;
+}
+
+
 /* The About Me section (Title, headshot & text) */
 #about-me{
-    color: var(--dark-purple)
+    color: var(--dark-purple);
+    display: flex;
 }
 
 .card-title {
     font-size: 30px;
     padding: 10px;
-    background-color: var(--light-purple);
+    flex: 20%;
+    color: var(--dark-purple);
+    margin: 10px;
+    border-right: var(--dark-purple) solid 10px;
+    min-width: 200px;
+    display: flex;
+    justify-content: right;
 }
+
 .card-content {
     display: flex;
+    flex: 80%;
+    margin: 10px;
 }
 
 .card-content p {
@@ -76,22 +92,53 @@ nav li {
     width: 200px;
 }
 
-
-.featured-work {
+/* The Work Section (Section Titles and featured work) */
+.flexbox-work {
     display: flex;
-    flex-wrap: wrap;
-    border: var(--light-purple) solid 2px;
 }
 
-.higlighted-work {
-    border: var(--light-purple) solid 2px;
+.flexbox-featured-work {
+    display: flex;
+    flex: 80%;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.highlighted-work {
+    margin: 5px;
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.highlighted-work img {
+    width: 100%;
+    border: solid black 3px;
 }
 
 .other-work {
-
+    margin: 5px;
+    height: 100px;
+    border: solid black 2px;
+    flex: 1 1;
 }
 
-aside {
+#project_set_2, #project_set_3{
+    display: flex;
+}
+
+#image3{
+    flex: 50%;
+}
+
+#image4{
+    flex: 50%;
+}
+
+.box-fit{
+    box-sizing: border-box;
 }
 
 footer {
