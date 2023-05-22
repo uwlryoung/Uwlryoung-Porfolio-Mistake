@@ -22,6 +22,7 @@ header {
 
 h1 {
     font-size: 50px;
+    margin-left: 40px;
 }
 
 nav ul {
@@ -71,6 +72,7 @@ nav li {
 #about-me{
     color: var(--dark-purple);
     display: flex;
+    margin-bottom: 20px;
 }
 
 .card-title {
@@ -104,18 +106,19 @@ nav li {
 /* The Work Section (Section Titles and featured work) */
 .flexbox-work {
     display: flex;
+    margin-bottom: 30px;
 }
 
-.flexbox-featured-work {
+.projects {
     display: flex;
     flex: 80%;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 60px;
+    padding: 0 60px 0 60px;
 }
 
 .highlighted-work {
-    margin: 5px;
+    margin: 10px;
     width: 100%;
     flex: 1 1 100%;
 }
@@ -147,7 +150,7 @@ nav li {
 #image4:hover, 
 #image4:hover {
     opacity: .80;
-    border: solid gold 10px;
+    border: solid gold 7px;
 }
 
 
@@ -159,23 +162,37 @@ nav li {
     left: 67%;
     background-color: var(--mint);
     border-radius: 3px;
-    z-index: 1;
     width: fit-content;
     padding: 5px;
 }
 
-#project_set_2 .image-cap, #project_set_3 .image-cap {
+#image3 .image-cap {
     color: var(--light-purple);
     font-size: 40px;
     position: relative;
-    right: 20px;
+    bottom: -70%;
+    left: -45%;
     background-color: var(--mint);
     border-radius: 3px;
-    z-index: 2;
     width: fit-content;
+    height: 25%;
     padding: 5px;
+    text-align: right;
 }
 
+#image4 .image-cap {
+    color: var(--light-purple);
+    font-size: 40px;
+    position: relative;
+    bottom: -70%;
+    left: -45%;
+    background-color: var(--mint);
+    border-radius: 3px;
+    width: fit-content;
+    height: 25%;
+    padding: 5px;
+    text-align: right;
+}
 
 footer {
     background-color: var(--light-purple);
@@ -205,7 +222,7 @@ footer li {
     color: var(--dark-purple);
 }
 
-
+/* Responsive design, changes layout when screen shrinks */
 @media screen and (max-width: 768px) {
     header {
         display: flex;
