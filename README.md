@@ -7,7 +7,7 @@ My porfolio page (uwlryoung)
 
 ### Screenshot of Portfolio
 
-
+Adding just one more thing to make a change. 
 
 ## Usage
 Standard webpage. 
