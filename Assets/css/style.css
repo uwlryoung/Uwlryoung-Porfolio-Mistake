@@ -8,7 +8,7 @@
 body {
     background-color: var(--mint);
     color: var(--butter);
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* The header, includes page title and nav menu bar */
@@ -45,14 +45,21 @@ nav li {
     justify-content: space-between;
     height: 200px;
     width: 75%;
+    position: relative;
 }
 
 .hero-caption{
-    background-color: var(--light-purple);
-    border: var(--dark-purple) double 15px;
     flex-grow: 1;
-    opacity: 0.85;
+    opacity: 0.50;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    width: 500px;
+    left: 63%;
+    top: 15%;
+    color: var(--dark-purple);
 }
+
 
 .flexbox-body {
     display: flex;
@@ -82,10 +89,12 @@ nav li {
     display: flex;
     flex: 80%;
     margin: 10px;
+    align-items: center;
 }
 
 .card-content p {
     padding: 10px;
+    font-size: 20px;
 }
 
 #headshot {
@@ -101,10 +110,8 @@ nav li {
     display: flex;
     flex: 80%;
     justify-content: space-evenly;
-    align-items: stretch;
     flex-wrap: wrap;
-    padding: 40px;
-    box-sizing: border-box;
+    padding: 60px;
 }
 
 .highlighted-work {
@@ -115,33 +122,147 @@ nav li {
 
 .highlighted-work img {
     width: 100%;
+    height: 400px;
+    object-fit: cover;
     border: solid black 3px;
 }
 
-.other-work {
-    margin: 5px;
-    height: 100px;
-    border: solid black 2px;
-    flex: 1 1;
-}
 
 #project_set_2, #project_set_3{
     display: flex;
 }
 
-#image3{
+#image1
+#image2, 
+#image3, 
+#image4, 
+#image4 {
+    display: flex;
     flex: 50%;
 }
 
-#image4{
-    flex: 50%;
+#image1:hover,
+#image2:hover, 
+#image3:hover, 
+#image4:hover, 
+#image4:hover {
+    opacity: .80;
+    border: solid gold 10px;
 }
 
-.box-fit{
-    box-sizing: border-box;
+
+#image1 .image-cap {
+    color: var(--light-purple);
+    font-size: 40px;
+    position: relative;
+    bottom: 15%;
+    left: 67%;
+    background-color: var(--mint);
+    border-radius: 3px;
+    z-index: 1;
+    width: fit-content;
+    padding: 5px;
 }
+
+#project_set_2 .image-cap, #project_set_3 .image-cap {
+    color: var(--light-purple);
+    font-size: 40px;
+    position: relative;
+    right: 20px;
+    background-color: var(--mint);
+    border-radius: 3px;
+    z-index: 2;
+    width: fit-content;
+    padding: 5px;
+}
+
 
 footer {
     background-color: var(--light-purple);
     margin: auto 0;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+}
+
+footer h2 {
+    flex: 30%;
+    font-size: 50px;
+}
+
+footer ul {
+    font-size: 30px;
+    display: inline-block;
+    margin: 10px;
+    display: flex;
+    padding: 10px;
+}
+
+footer li {
+    margin: 20px;
+    color: var(--dark-purple);
+}
+
+@media screen and (max-width: 1200px) {
+    .hero-caption {
+        left: 59%;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .hero-caption {
+        left: 50%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .hero-caption {
+        left: 45%;
+        top: 10%
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero-caption {
+        left: 40%;
+        top: 0%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    .hero-caption {
+        left: 49%;
+        top: 5%;
+    }
+
+    .card-content {
+        flex-direction: column;
+    }
+
+    #project_set_2 {
+        flex-direction: column;
+    }
+
+    #project_set_3 {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer ul {
+        display: block;
+    }
 }

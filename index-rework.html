@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uwlryoung Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style-rework.css" />
+  </head>
+
+  <body>
+    <header>
+        <h1>Uwlryoung Portfolio</h1>
+        <nav>
+          <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact Me</a></li>
+            <li><a href="#">Resume</a></li>
+          </ul>
+        </nav>
+    </header>
+    
+      <figure class="hero">
+        <img class="hero-pic" src="./Assets/Images/water-color.jpeg" alt="blue water-color painting">
+        <figcaption class="hero-caption">Web development is like painting: The canvas is the HTML,  the paints are the CSS, and JavaScript is pouring tomato soup on it.</figcaption>
+      </figure>
+
+    <main> <!-- Flexbox with two children, stacked as a column-->
+        <section id="about-me"> <!-- Main Child 1: About me, should have flexbox with three children: Title, Profile Pic, Text-->
+            <h2 class="right-border"> About Me </h2> <!-- About Me Child 1: the Title-->
+            <figure><!-- About Me Child 2: The headshot-->
+                <img id="headshot" src="./Assets/Images/headshot.png" alt="headshot">
+            </figure> 
+            <p> This section is about Lucas (uwlryoung) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non commodo lectus, quis auctor erat. Donec mattis ultrices interdum. Proin a felis quis nulla elementum laoreet sit amet vel massa. Mauris vehicula, metus ut eleifend viverra, sem ante rhoncus erat, ut ultrices leo turpis eget nunc. Vivamus quis vulputate ex, vitae volutpat quam. Integer ullamcorper enim nec dignissim ultricies. Donec ultrices arcu sed orci lobortis ornare.</p> <!-- About Me Child 3: text-->
+        </section> 
+
+        <section id="portfolio">        <!-- Main Child 2: Portfolio, should have flexbox with two children: Title, Projects-->
+            <h2 class="right-border">Work</h2> <!-- Work Child 1: the Title-->
+            
+            <section id="projects">                   <!-- Work child 2: Projects - should have flexbox with 3 children: Main-featured, sub-featured-1, sub-featured-2 (subs having two children each)-->
+                <!-- <section id="main-featured-project">    Portfolio Child 1: Main-Featured Work titled "Project-1" -->
+                <figure id="project-1" class="highlighted-work">
+                    <img src="./Assets/Images/bird.jpeg" alt="chirping sparrow">
+                </figure>
+                <!-- </section> -->
+
+                <div id="projects-set1"> <!-- Portfolio Child 2: Sub-featured-1 - with two children, Project-2 and Project-3-->
+                  <figure id="project-2" class="highlighted-work">               <!--Child 1: Project 2-->
+                    <img src="./Assets/Images/mail-box.jpeg" alt="U.S. Mailbox">         
+                  </figure>
+
+                  <figure id="project-3" class="highlighted-work">               <!--Child 1: Project 3-->
+                    <img src="./Assets/Images/mountains.jpeg" alt="Mountains and a starry night sky">
+                  </figure>
+                </div>
+
+                <div id="projects-set2">      <!-- Portfolio Child 3: Sub-featured-1 - with two children, Project-4 and Project-5-->
+                  <figure id="project-4" class="highlighted-work">                   <!--Child 1: Project 4-->
+                    <img src="./Assets/Images/red fox.jpeg" alt="Red fox">
+                  </figure>
+                  <figure id="project-5" class="highlighted-work">               <!--Child 1: Project 5-->
+                    <img src="./Assets/Images/colored-huts.jpeg">
+                  </figure>
+                </div>
+
+            </section>
+
+        </section> 
+    
+
+    </main>
+
+    <footer></footer>
+
+  </body>
+
+</html>
